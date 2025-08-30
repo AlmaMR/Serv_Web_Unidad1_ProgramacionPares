@@ -1,11 +1,7 @@
-
-
-let promesa = new Promise(function (resolve, reject) {
-
+function promesa() {
+  return new Promise((resolve) => {
     setTimeout(() => {
-        resolve("Promesa Resuelta!");
+      resolve("Promesa resuelta");
     }, 2000);
-
-});
-
-console.log(promesa);
+  });
+}
