@@ -1,7 +1,13 @@
+// Uso de objetos
+// Crea un objeto persona con propiedades nombre, edad y
+// profesión. Imprime su nombre.
+
+// Creamos un objeto con las propiedades pedidas
 const persona = {
-    nombre: "Alma",
-    edad: 22,
-    profesion: "estudiante"
+    Nombre: "Alma",
+    Edad: 22,
+    Profesion: "estudiante"
 };
 
-console.log(persona.nombre);
+// Imprimimos en consola el objeto pero solo la propiedad Nombre
+console.log(persona.Nombre);

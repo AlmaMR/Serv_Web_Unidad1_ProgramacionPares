@@ -1,14 +1,18 @@
-function resolver() {
-    
+// Uso de async/await
+// Modifica la función del ejercicio anterior para que use async y await.
+
+// Función asincrona que contiene una Promise que se resolvera
+// 2 segundos despues con la ayuda de setTimeout
+async function promesa() {
+  const promesa = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promesa resuelta");
+    }, 2000);
+  });
+
+  return await promesa;
+
 }
 
-
-let promesa = new Promise(function (resolve, reject) {
-
-    setTimeout(() => {
-        resolve("Promesa Resuelta!");
-    }, 2000);
-
-});
-
-console.log(promesa);
+// Imprimimos el resultado de la funcion promesa
+console.log(promesa());
